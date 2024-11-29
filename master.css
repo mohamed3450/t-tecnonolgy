@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -266,6 +267,13 @@ h1 {
         flex-wrap: wrap;
         height: auto;
         background-color: #050046;
+    }
+   .m-cards{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .m-card{
         background-image: url(card.jpg);
