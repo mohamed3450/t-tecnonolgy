@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -79,9 +78,9 @@ h1 {
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        background-color: #101010;
+        background-color: #ffffff;
+        border-radius: 15px;
     }
-    
     .nav-menu {
         display: flex;
         justify-content: space-between;
@@ -126,6 +125,7 @@ h1 {
     .nav-link:hover{
         border-radius: 9px;
         background-color: #101010;
+        box-shadow: 0px 0px 10px 20px rgba(0, 0, 0, 0.5);
     }
     
     @media only screen and (max-width: 768px) {
@@ -149,7 +149,7 @@ h1 {
         }
         .nav-link:hover{
             border-radius: 9px;
-       
+           
         }
         .nav-item {
             margin: 2.5rem 0;
@@ -187,7 +187,7 @@ h1 {
         background-position: center center;;
         background-size: cover cover;
         background-repeat: no-repeat;
-        height: 1000px;
+        height: 100%;
     }
     .hero-container {
         position: relative;
@@ -195,17 +195,17 @@ h1 {
     }
     .hero-text {
         position: absolute;
-        top: 50%;
+        top: 47%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: clamp(20px, 5vw, 30px);
+        font-size: clamp(10px, 4.5vw, 25px);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         text-align: center;
-        padding: 10px 20px;
+        padding: 1px;
         border-radius: 5px;
     }
-    .laptops{
+    .laptops {
         display: flex;
         text-align: center;
         justify-content: center;
@@ -214,7 +214,8 @@ h1 {
         height: auto;
         background-color: #050046;
     }
-    .laptops-cards{
+    
+    .laptops-cards {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -222,14 +223,16 @@ h1 {
         justify-content: center;
         flex-wrap: wrap;
     }
-    .cards{
+    
+    .cards {
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
-    .card{
+    
+    .card {
         background-color: transparent;
         border: solid 2px blue;
         border-radius: 10px;
@@ -237,15 +240,18 @@ h1 {
         height: 250px;
         margin: 10px;
         gap: 10px;
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     }
-    .card img{
+    
+    .card img {
         margin: 10px;
         width: 50%;
         height: 50%;
         object-fit: cover;
         border-radius: 10px;
     }
-     .card-text{
+    
+    .card-text {
         color: white;
         font-size: 15px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -253,12 +259,14 @@ h1 {
         padding: 10px;
         border-radius: 5px;
     }
-    .card:hover{
-        transition: 1s linear;
+    
+    .card:hover {
+        transition: 1s;
+    rotate: 10deg;
         transform: scale(1.07);
-      rotate: 20deg;
-      box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     }
+    
     .mopiles{
         display: flex;
         text-align: center;
@@ -268,7 +276,7 @@ h1 {
         height: auto;
         background-color: #050046;
     }
-   .m-cards{
+    .m-cards{
         display: flex;
         text-align: center;
         align-items: center;
@@ -296,3 +304,127 @@ h1 {
         object-fit: cover;
         border-radius: 10px;
     }
+    .tablets{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        background-color: #050046;
+        font-size: 20px;
+    }
+    .tablets-cards{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+.cards{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.t-card{
+    background-color:#0e004e;
+    box-shadow:  0px 0px 10px 10px  rgb(0, 247, 255);
+    border: solid 2px rgb(0, 150, 155);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 19px;
+    gap: 10px;
+}
+.t-card-img{
+    height: 100%;
+    width: 100%;
+}
+.t-card-img img{
+    margin: 10px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.tablets .card-text{
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: -120px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.t-card:hover{
+    transition: 0.6s ease-in-out;
+    box-shadow:  0px 0px 0px 10px  rgb(0, 247, 255) ; 
+    transform: scale(0.8);
+}
+.contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    background-color: #050046;
+    font-size: 20px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.content{
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    background-color: #070066;
+    width: 100%;
+    border: double 1px solid ;  
+    border-radius: 10px;
+    height: 40vh;
+}
+input{
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 5px;
+    border: double 2px #00c3ff;
+}
+textarea{
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    margin: 5px;
+    border: solid 2px #00c3ff;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    border: none;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
